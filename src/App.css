@@ -1,5 +1,9 @@
 .App {
   text-align: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  flex: 1;
 }
 
 .App-logo {
@@ -35,4 +39,22 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+.board{
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  justify-content: center;
+}
+
+.cell{
+  background-color: aqua;
+  width: 100px;
+  height: 100px;
+  font-size: large;
+  font-weight: bold;
+}
+
+.cell:hover{
+  background-color: blue;
 }
